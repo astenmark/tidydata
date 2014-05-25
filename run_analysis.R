@@ -49,6 +49,6 @@ colnames(data) <- gsub("BodyBody", "Body", colnames(data))
 colnames(data) <- gsub("(\\(\\)|-)", "", colnames(data))
 
 # Aggregate data
-means <- aggregate(data[,1:66], list(data$Subject, data$Activity), FUN = mean)
+means <- aggregate(data[,1:66], list(Subject = data$Subject, Activity = data$Activity), FUN = mean)
 dput(means, "tidymeans.txt")
 
