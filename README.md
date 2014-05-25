@@ -14,5 +14,5 @@ In order to use the script, do the following:
 
 4. The data files as described in the codebook will be read and a file tidydata.txt will be written to the current directory.  This resulting tidy dataset is created using dput(), and can be imported using:
 
-   <pre>> means <- dget("tidymeans.txt")</pre>
+   <pre>> means = dget("tidymeans.txt")</pre>
 
